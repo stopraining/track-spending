@@ -1,17 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MemberArea></MemberArea>
+  <UploadArea></UploadArea>
+  <hr />
+  <InputItem></InputItem>
+  <ResultArea></ResultArea>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InputItem from "./components/InputItem.vue";
+import MemberArea from "./components/MemberArea.vue";
+import ResultArea from "./components/ResultArea.vue";
+import UploadArea from "./components/UploadArea.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    InputItem,
+    MemberArea,
+    ResultArea,
+    UploadArea,
+  },
+};
 </script>
 
 <style>
@@ -21,6 +30,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
