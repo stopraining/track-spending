@@ -21,7 +21,7 @@ export default createStore({
         state.averageAmount = Math.round(state.total / state.members.length); //.toFixed(1);
         return;
       } else {
-        alert("already exist");
+        // alert("already exist");
       }
     },
     deleteItem(state, index) {
